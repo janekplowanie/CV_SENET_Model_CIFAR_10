@@ -14,10 +14,9 @@ with 50,000 images for training and 10,000 images for testing. The dataset is
 known for its small size and balanced class distribution, making it suitable 
 for evaluating and comparing different image classification algorithms.
 
+Examples of CIFAR 10 images and classes:
 <img width="1121" alt="Screenshot 2024-04-11 at 23 09 50" src="https://github.com/janekplowanie/CV_Model_CIFAR_10/assets/102162180/8a83b596-0c20-4316-adbd-e2cdbad544be">
 
-
-![Examples of CIFAR 10 images and classes:](Other/Screenshot 2024-04-11 at 23.09.50.png)
 
 ### SE-NET Architecture
 The implemented model is loosely based on the SE-NET architecture, 
@@ -29,7 +28,9 @@ that the linear layer determines the importance of a particular convolutional
 layer. This potentially could lead to better performance compared to standard 
 CNN architectures.
 
-![Structure of a single block:](Other/Screenshot 2024-04-07 at 19.08.15 copy.png)
+Structure of a single block:
+<img width="1015" alt="Screenshot 2024-04-07 at 19 08 15 copy" src="https://github.com/janekplowanie/CV_Model_CIFAR_10/assets/102162180/6f181c2f-dec1-4672-9d2f-d97f6786d16e">
+
 
 ### Model Architecture Details
 The SE-NET implementation for CIFAR-10 classification consists of the following components:
@@ -39,7 +40,9 @@ The SE-NET implementation for CIFAR-10 classification consists of the following 
 - Fully-Connected Layers: Two fully-connected layers are used for classification. The first layer transforms the flattened features into a lower-dimensional space, followed by the final layer with the number of neurons equal to the number of classes (10 for CIFAR-10).
 - Softmax Layer: A softmax layer is applied at the end to convert the output logits into class probabilities, enabling multi-class classification.
 
-![Structure of the model:](Other/Screenshot 2024-04-11 at 23.21.54.png)
+
+Structure of the model:
+<img width="666" alt="Screenshot 2024-04-11 at 23 21 54" src="https://github.com/janekplowanie/CV_Model_CIFAR_10/assets/102162180/3fad7ee9-9ea4-42ec-8808-32760aa0b545">
 
 ### Hyperparameters
 The following hyperparameters were chosen for the SE-NET implementation:
@@ -51,9 +54,12 @@ The following hyperparameters were chosen for the SE-NET implementation:
 - Number of epochs, due to time constraints in the collab notebook 30 epochs achieved a satisfactory accuracy rate
 
 ### Results: Accuracy of 70.64% after 100 epochs
-![Final accuracy:](Other/Screenshot 2024-04-24 at 21.22.42.png)
-![Graph:](Other/Screenshot 2024-04-12 at 17.36.14.png)
 
+Final accuracy:
+<img width="565" alt="Screenshot 2024-04-24 at 21 22 42" src="https://github.com/janekplowanie/CV_Model_CIFAR_10/assets/102162180/156d8d66-66a4-41c5-968b-8cc0d01cefe9">
+
+Graph:
+<img width="615" alt="Screenshot 2024-04-12 at 17 36 14" src="https://github.com/janekplowanie/CV_Model_CIFAR_10/assets/102162180/e04f39ab-d52f-4e5c-ae32-4046c08606be">
 
 ### Conclusion
 The results for image classification on the CIFAR-10 dataset are presented in the report are promising.
