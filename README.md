@@ -14,6 +14,9 @@ with 50,000 images for training and 10,000 images for testing. The dataset is
 known for its small size and balanced class distribution, making it suitable 
 for evaluating and comparing different image classification algorithms.
 
+<img width="1121" alt="Screenshot 2024-04-11 at 23 09 50" src="https://github.com/janekplowanie/CV_Model_CIFAR_10/assets/102162180/8a83b596-0c20-4316-adbd-e2cdbad544be">
+
+
 ![Examples of CIFAR 10 images and classes:](Other/Screenshot 2024-04-11 at 23.09.50.png)
 
 ### SE-NET Architecture
